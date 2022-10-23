@@ -1,0 +1,123 @@
+.comunidade {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.comunidade__titulo {
+    font-size: 51px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+}
+
+.comunidade_descricao {
+    font-size: 28px;
+    color: var(--cor-texto);
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+    padding: 3rem 0;
+}
+
+.membros__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.membros__imagem {
+    border-radius: 100%;
+    height: 30vh;
+    width: 30vh;
+    margin: 0 auto;
+    background-color: var(--cor-destaque);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+
+.membros__nome {
+    font-size: 32px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-destaque);
+    margin: 1rem 0;
+}
+
+.membros__funcao {
+    font-size: 23px;
+    text-transform: lowercase;
+    color: var(--cor-texto);
+}
+
+.membros__imagem--roberta {
+    background-image: url(../img/pessoas/roberta.jpg);
+}
+
+.membros__imagem--marcela {
+    background-image: url(../img/pessoas/marcela.jpg);
+}
+
+.membros__imagem--andreia {
+    background-image: url(../img/pessoas/andreia.jpg);
+}
+
+@media screen and (max-width: 1024px) {
+    .comunidade {
+        padding: 2rem 0;
+    }
+    
+    .membros {
+        gap: 3rem;
+        padding: 3rem 0;
+    }
+
+    .membros__imagem {
+        width: 20vh;
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .comunidade__titulo {
+        font-size: 36px;
+    }
+
+    .comunidade_descricao {
+        font-size: 22px;
+    }
+
+    .membros {
+        padding: 0;
+    }
+
+    .membros__imagem {
+        width: 15vh;
+        height: 15vh;
+        margin-bottom: 0;
+    }
+
+    .membros__nome {
+        font-size: 26px;
+        margin: .5rem 0;
+    }
+
+    .membros__funcao {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .membros {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .membros__imagem {
+        width: 20vh;
+        height: 20vh;
+    }
+}

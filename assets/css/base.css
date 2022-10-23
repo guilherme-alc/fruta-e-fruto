@@ -1,0 +1,22 @@
+@import url(cabecalho.css);
+@import url(banner.css);
+@import url(sobre.css);
+@import url(receitas.css);
+@import url(comunidade.css);
+@import url(rodape.css);
+
+:root {
+    --cor-texto: #8C8888;
+    --cor-destaque: #8D0606;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --fonte-titulo: 'Pacifico', cursive;
+    --fonte-principal: 'Roboto', sans-serif;
+    --fundo-receitas: #E5E5E5;
+    --fundo-rodape: #C4C4C4;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}

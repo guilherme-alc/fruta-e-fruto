@@ -1,0 +1,26 @@
+.rodape {
+    background-color: var(--fundo-rodape);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    text-transform: lowercase;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 768px) {
+    .rodape {
+        padding: .5rem 1rem;
+        justify-content: center;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+    }
+}
